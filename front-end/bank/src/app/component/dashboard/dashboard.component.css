@@ -1,0 +1,31 @@
+.navbtn{
+    display: flex;
+    margin-left: 10px;
+}
+
+.bms{
+    width: 40rem;
+    
+}
+
+.navbar-nav .nav-link.active{
+    color: rgb(217, 216, 216);
+    border: solid white 1px;
+
+    
+}
+
+.nav-link{
+    color: white;
+    border: none;
+}
+
+.kk{
+    color: white;
+}
+
+
+.dashboard{
+    /* margin-bottom: 25px; */
+    height: 600px;
+}

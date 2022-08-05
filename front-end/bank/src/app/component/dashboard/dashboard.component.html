@@ -1,0 +1,40 @@
+
+<div  class="bg-success">
+  <nav class="navbar navbar-expand-lg  bg-primary container-fluid">
+    <div class="container bms">
+       <a class="navbar-brand kk" href="/home" >Bank Management System</a></div>
+    
+    <div class=" navbar-collapse container collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav container kk ">
+        <li class="nav-item "> 
+          <button class="nav-link btn navbtn" type="submit" routerLink="/home" [routerLinkActive]="['active']"   >Home</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn navbtn nav-link" type="submit"  routerLink="/profiles"  [routerLinkActive]="['active']" >Profiles</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn navbtn nav-link" routerLink="/withdraw" type="submit" [routerLinkActive]="['active']"   >Withdraw</button>
+           </li>
+        <li class="nav-item">
+          <button class="btn navbtn nav-link" routerLink="/deposit" type="submit"   [routerLinkActive]="['active']"   >Deposit</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn navbtn nav-link" routerLink="/transfer" type="submit"  [routerLinkActive]="['active']"   >Transfer
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="btn navbtn nav-link" routerLink="/viewbalance" type="submit"  [routerLinkActive]="['active']"  >View
+            Balance</button>
+        </li>
+        <li class="nav-item">   
+          <button class="btn navbtn nav-link"  type="submit" routerLink="/transactions" [routerLinkActive]="['active']" > Transactions</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn navbtn nav-link" type="submit" (click)="logOut()" routerLink="/" >LogOut</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+ 
+

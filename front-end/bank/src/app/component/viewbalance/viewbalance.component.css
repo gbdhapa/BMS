@@ -1,0 +1,30 @@
+.pp{
+    display: flex;
+    justify-content:center;
+    height: 607px;
+    
+ }
+ 
+ .ab{ 
+     margin-left: 130px;
+     display: flex;
+     padding-left: 10px;
+   }
+ 
+ .kk{
+
+     display: flex;
+     width: 500px;
+     flex-direction: column;
+    
+   }
+   .dp{
+     margin-top: 100px;
+   }
+ 
+    
+
+.col-sm-3 {
+    flex: 0 0 auto;
+    width: 50%;
+}

@@ -1,0 +1,71 @@
+
+
+<div class="body">
+<app-dashboard></app-dashboard>
+<div class="container">
+    <div class="row pp container">
+        <div class="kk">
+            <div class="dp ">
+                <h4>Transfer Money</h4>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-body form-horizontal payment-form">
+
+                    <div class="form-group">
+                        <label for="description" class="col-sm control-label">Depositor Account Number</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="description" name="description"
+                                [(ngModel)]="accountNo1">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-primary mb-4 mt-2"
+                                (click)="verify1(accountNo1)"  [disabled]="isdisabled1"   >Verify</button>
+                                <p>{{verifymsg1}} </p>
+                        </div>
+                    </div>
+                    <div *ngIf="flag1" >
+                        <div class="form-group">
+                            <label for="description" class="col-sm control-label">Recepient Account Number</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="description" name="description"
+                                    [(ngModel)]="accountNo2">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 text-right">
+                                <button type="button" class="btn btn-primary mb-4 mt-2"
+                                    (click)="verify2(accountNo2)" [disabled]="isdisabled2"   >Verify</button>
+                                    <p>{{verifymsg2}} </p>
+                            </div>
+                        </div>
+                        <div *ngIf="flag2">
+                            <div class="form-group">
+                                <label for="amount" class="col-sm-3 control-label">Amount</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="amount" name="amount"
+                                        [(ngModel)]="amount">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12 text-right">
+                                    <button type="button" class="btn btn-primary mb-4 mt-2"
+                                        (click)="transfer()"  [disabled]="isdisabled3"   >Transfer</button>
+                                        <p>{{transfermsg}} </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kk"> 
+            <img src="https://www.nakshatratechnology.org/images/banking.png" alt="" width="600px" height="600px">
+            <!-- <img class="kp" src="https://internetofbusiness.com/wp-content/uploads/2018/11/shutterstock_582814390.jpg" alt="" width="600px" height="600px"> -->
+        </div>
+    </div>
+
+</div>

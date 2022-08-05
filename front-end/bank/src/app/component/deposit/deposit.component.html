@@ -1,0 +1,57 @@
+<div class="body">
+<app-dashboard></app-dashboard>
+<router-outlet></router-outlet>
+<div class="container">  
+    <div class="row pp container"> 
+        <div class="kk"> 
+            <div class="dp ">
+                <h4>Deposit Money</h4>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-body form-horizontal payment-form">
+                   
+                    <div class="form-group">
+                        <label for="description" class="col-sm-3 control-label">Account Number</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="description" name="description" [(ngModel)]="accountNo" >
+                        </div>
+                    </div> 
+                      
+                    <div class="form-group">
+                     <div class="col-sm-12 text-right">
+        
+                         <button type="button" class="btn navbtn  btn-primary mb-4 mt-2" (click)="verify(accountNo)" [disabled]="isDisabled1"  >Verify</button>
+                         <p>{{verifymsg}} </p>
+                       
+                     </div>
+                 </div  >
+                 <div *ngIf="flag">
+                    <div class="form-group"   >
+                        <label for="amount" class="col-sm-3 control-label">Amount</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control"  [(ngModel)]="amount">
+                        </div>
+                    </div>  
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right"     >
+                            <button   type="button" class="btn btn-primary  mb-4 mt-2"  (click)="deposit()"  [disabled]="isDisabled"  >Deposit</button>
+                            <p>{{depositmsg}} </p>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+            </div>     
+           
+        </div> 
+          
+   <div class="kk"> 
+    <img src="https://www.nakshatratechnology.org/images/banking.png" alt="" width="600px" height="600px">   
+            <!-- <img class="kp" src="https://internetofbusiness.com/wp-content/uploads/2018/11/shutterstock_582814390.jpg" alt="" width="600px" height="600px" >  -->
+        </div>
+    </div>
+
+</div>
+
+       
+
+        
